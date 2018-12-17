@@ -11,6 +11,10 @@
     "container",
     "service container"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willishq/ts-container.git"
+  },
   "author": "Andrew Willis (https://willishq.co.uk)",
   "license": "MIT",
   "dependencies": {},
