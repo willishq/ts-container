@@ -1,6 +1,6 @@
 {
   "name": "@willishq/ts-container",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple TypeScript container",
   "scripts": {
     "lint": "eslint --fix src/**/*.ts",
@@ -42,5 +42,10 @@
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2",
     "typescript-eslint-parser": "^21.0.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/willishq/ts-container/issues"
+  },
+  "homepage": "https://github.com/willishq/ts-container#readme",
+  "main": "src/App.ts"
 }
