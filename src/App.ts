@@ -1,12 +1,12 @@
 export const AppExceptions = {
-    setAlreadyExists: (name) => `Can not set service ${name} - it already exists.`,
-    makeDoesNotExist: (name) => `Can not make service ${name} - it does not exist.`,
-    overwriteNotExist: (name) => `Can not overwrite service ${name} - it does not exist.`
+    setAlreadyExists: (name: string) => `Can not set service ${name} - it already exists.`,
+    makeDoesNotExist: (name: string) => `Can not make service ${name} - it does not exist.`,
+    overwriteNotExist: (name: string) => `Can not overwrite service ${name} - it does not exist.`
 };
 
 export default class App {
-    private services: {} = {};
-    private instances: {} = {};
+    private services: {[key: string]: any} = {};
+    private instances: {[key: string]: any} = {};
 
     public set<T> (name: string, service: (app: App) => T) {
         if (this.services.hasOwnProperty(name)) {

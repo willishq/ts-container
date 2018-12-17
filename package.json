@@ -1,8 +1,9 @@
 {
   "name": "@willishq/ts-container",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple TypeScript container",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint --fix src/**/*.ts",
     "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
@@ -47,5 +48,6 @@
     "url": "https://github.com/willishq/ts-container/issues"
   },
   "homepage": "https://github.com/willishq/ts-container#readme",
-  "main": "src/App.ts"
+  "main": "dist/index.js",
+  "types": "dist/index.d.js"
 }
