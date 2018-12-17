@@ -1,0 +1,86 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "standard-with-typescript"
+    ],
+    "rules": {
+        "quotes": [
+            1,
+            "double"
+        ],
+        "new-cap": [
+            2,
+            {
+                "capIsNewExceptions": [
+                    "Q",
+                    "QQ"
+                ]
+            }
+        ],
+        "no-underscore-dangle": [
+            0
+        ],
+        "no-multi-spaces": [
+            0
+        ],
+        "no-spaced-func": [
+            0
+        ],
+        "no-multiple-empty-lines": [
+            2
+        ],
+        "no-trailing-spaces": [
+            2
+        ],
+        "no-console": 1,
+        "no-unused-vars": [
+            "error",
+            {
+                "varsIgnorePattern": "h"
+            }
+        ],
+        "max-statements": [
+            2,
+            22
+        ],
+        "complexity": [
+            2,
+            8
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "compat/compat": "error",
+        "filenames/match-exported": 2,
+        "typescript/explicit-function-return-type": [
+            "warning",
+            {
+                "allowExpressions": true
+            }
+        ]
+    },
+    "globals": {
+        "WebFont": true
+    },
+    "plugins": [
+        "compat",
+        "filenames"
+    ],
+    "settings": {
+        "polyfills": [
+            "promises"
+        ]
+    },
+    "parser": "typescript-eslint-parser"
+}
